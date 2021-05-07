@@ -34,12 +34,13 @@ class KittensController < ApplicationController
 
   def edit
     @kitten = Kitten.find(params[:id])
+    flash[:notice] = 'Kitten edited successfully'
   end
 
   def destroy
     @kitten = Kitten.find(params[:id])
     @kitten.destroy
-    flash[:notice] = 'Your kitten has been deleted'
+    flash[:alert] = 'Your kitten has been deleted'
     redirect_to root_path
   end
 
