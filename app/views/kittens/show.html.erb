@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h2>Awesome kitty!</h2>
+    <% @kitten.each do |kitten| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title border-bottom pb-2"><%= link_to kitten.name, kitten_path(kitten) %> </h5>
+        <p class="card-text"><strong>Age: </strong><%= kitten.age %></p>
+        <p class="card-text"><strong>Cuteness: </strong><%= kitten.cuteness %></p>
+        <p class="card-text"><strong>Softness: </strong><%= kitten.cuteness %></p>
+        <%= link_to "Delete kitten", kitten_path, method: :DELETE class: "btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>

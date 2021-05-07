@@ -20,3 +20,10 @@
   font-size: larger;
   font-weight: 900;
  }
+
+ h2 {
+  text-align: center;
+  color: blue;
+  font-size: large;
+  font-weight: 700
+ }
