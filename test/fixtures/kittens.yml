@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  age: MyString
+  mae: MyString
+  age: 1
   cuteness: MyString
   softness: MyString
 
 two:
-  name: MyString
-  age: MyString
+  mae: MyString
+  age: 1
   cuteness: MyString
   softness: MyString
