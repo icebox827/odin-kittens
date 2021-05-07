@@ -9,8 +9,8 @@
         <p class="card-text"><strong>Age: </strong><%= kitten.age %></p>
         <p class="card-text"><strong>Cuteness: </strong><%= kitten.cuteness %></p>
         <p class="card-text"><strong>Softness: </strong><%= kitten.cuteness %></p>
-        <%= link_to "Edit", edit_kitten_path, method: :DELETE class: "btn btn-warning" %>
-        <%= link_to "Delete", kitten_path, method: :DELETE class: "btn btn-danger" %>
+        <%= link_to "Edit", edit_kitten_path(kitten), method: :DELETE class: "btn btn-warning" %>
+        <%= link_to "Delete", kitten, method: :DELETE, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
       </div>
     </div>
   </div>
