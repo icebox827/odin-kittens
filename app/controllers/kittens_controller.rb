@@ -1,5 +1,5 @@
 class KittensController < ApplicationController
   def index
-    @kitten = kitten.all
+    @kitten = Kitten.all
   end
 end
