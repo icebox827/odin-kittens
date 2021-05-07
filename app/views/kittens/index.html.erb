@@ -1,4 +1,5 @@
 <h1>Hello Kitty!</h1>
 <% Kitten.all do |kitten| %>
-<h2><%= kitten.name %></h2>
+  <h2><%= kitten.name %></h2>
+  <%= link_to "Delete", kitten, method: :DELETE, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
 <% end %>
