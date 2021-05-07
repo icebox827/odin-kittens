@@ -24,7 +24,12 @@ class KittensController < ApplicationController
 
   def update
     @kitten = Kitten.find(params[:id])
-    @kitten.update(name: params[:kitten][:name], age: params[:kitten][:age])
+    if @kitten.update(name: params[:kitten][:name], age: params[:kitten][:age])
+      flash[:notice] = 'Kitten updated successfully'
+      redirect_to kitten_path(@kitten)
+    else
+      render 'edit'
+    end
   end
 
   def edit
