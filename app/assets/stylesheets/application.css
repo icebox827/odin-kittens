@@ -16,4 +16,7 @@
 
  h1 {
   text-align: center;
+  color: blue;
+  font-size: larger;
+  font-weight: 900;
  }
