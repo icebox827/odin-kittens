@@ -5,15 +5,19 @@
 
       <%= form_with do |f| %>
         <div class="form-group">
+          <%= f.label :name, 'Name: ' %>
           <%= f.text_field :name, autofocus: true, placeholder: "Kitten name" , class: "form-control" %>
         </div><br />
         <div class="form-group">
+          <%= f.label :age, 'Age: ' %>
           <%= f.number_field :age, placeholder: "Kitten age" , class: "form-control" %>
         </div><br />
         <div class="form-group">
+          <%= f.label :cuteness, 'Cuteness: ' %>
           <%= f.text_field :cuteness, placeholder: "Cuteness" , class: "form-control" %>
         </div><br />
         <div class="form-group">
+          <%= f.label :softness, 'Softness: ' %>
           <%= f.text_field :softness, placeholder: "Softeness" , class: "form-control" %>
         </div><br />
         <% end %>

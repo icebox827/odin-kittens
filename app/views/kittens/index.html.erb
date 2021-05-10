@@ -1,5 +1,8 @@
 <h1>Hello Kitty!</h1>
-<% Kitten.all do |kitten| %>
-  <h2><%= kitten.name %></h2>
+<% @kittens.each do |k| %>
+  <h2><%= k.name %></h2>
+  <h3>Age: <%= k.age %></h3>
+  <h3>Cuteness: <%= k.cuteness %></h3>
+  <h3>Softness: <%= k.softness %></h3>
   <%= link_to "Delete", kitten, method: :DELETE, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
 <% end %>
